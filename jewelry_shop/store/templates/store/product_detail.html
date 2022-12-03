@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %} 
+
+
+{% block title %}
+{{ product.title }}
+{% endblock %}
+
+
+{% block content %}
+
+    
+
+    <h1 class="text-3xl">{{ product.title }}</h1>
+    <p class="text-gray-600 text-xl">Tk {{ product.get_display_price }}</p>
+
+    {% if product.description %}
+        <p class="text-gray-600 text-xl mt-4">
+            {{ product.description }}
+        </p> 
+    {% endif %}
+{% endblock %}
+
+

@@ -1,0 +1,19 @@
+{% for category in categories %} 
+
+
+
+
+
+   
+       <div class="">
+        <a href="{% url 'category_detail' category.slug %}">
+            <div class="mr-12 text-xl text-pink-900 text-center font-bold bg-white border-2 border-pink-900 px-14 py-6 hover:bg-pink-800 hover:text-white transition duration-300 ease-linear">
+                
+                {{category.title }}
+
+            </div>
+        </a>
+       </div>
+    
+    
+{% endfor %}
