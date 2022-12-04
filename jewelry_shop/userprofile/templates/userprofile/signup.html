@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %} 
+
+
+{% block title %}
+signup
+{% endblock %}
+
+
+{% block content %}
+
+<h1 class="text-2xl text-gray-600 mb-2 mt-12">
+   Signup
+
+    <form action="." method="post">
+        {% csrf_token %} 
+
+
+       
+        {{ form.as_p }}
+      
+
+        <button class="px-8 py-4 bg-pink-600 text-white mt-2 rounded">SignUp</button>
+
+    </form>
+
+</h1>
+
+
+
+{% endblock %}
